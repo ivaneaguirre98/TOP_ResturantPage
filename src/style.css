@@ -1,7 +1,54 @@
 body{
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0px;
 }
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    background-color:#333333 ;
+    display: flex;
+    align-items: center;
+}
+
+.navbar a{
+    color: #e7e7e7;
+}
+
+.navbar ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .brand {
+    display: block;
+    color: #e7e7e7;
+   /* Remove padding from top/bottom and add 24px padding right/left */
+    padding: 0 24px;
+    font-size: 24px;
+  }
+  
+  .navbar ul li a {
+    color: #e7e7e7;
+    padding: 24px;
+    /*Let's make the anchor display block.
+       This will ensure when we hover, focus, or is active we get the full width and height 
+        of the container.
+    */
+    display: block;
+  }
+  
+  /* When a use hovers or focuses to a link change the background */
+  .navbar ul a:hover,
+  .navbar ul a:focus {
+    background-color: #272727;
+  }
 
 .textContent{
     text-align: center;
