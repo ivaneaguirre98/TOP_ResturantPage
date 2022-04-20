@@ -41,6 +41,25 @@ function buildNavBar(){
     let ulElement = document.createElement("ul");
     ulElement.classList.add("navContent");
     navElement.appendChild(ulElement);
+
+    //build out list items for ul for nav
+    let homeButton = document.createElement("li");
+    homeButton.classList.add("navItem");
+    homeButton.id = "homeBtn";
+    homeButton.innerHTML = "Home";
+    ulElement.appendChild(homeButton);
+
+    let menuButton = document.createElement("li");
+    menuButton.classList.add("navItem");
+    menuButton.innerHTML = "Menu";
+    menuButton.id = "menuBtn";
+    ulElement.appendChild(menuButton);
+
+    let contactButton = document.createElement("li");
+    contactButton.classList.add("navItem");
+    contactButton.innerHTML = "Contact";
+    contactButton.id = "contactBtn";
+    ulElement.appendChild(contactButton);
 }
 
 function buildMainSection(){

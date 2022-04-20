@@ -34,5 +34,40 @@ body{
 .navbarSection{
     width: 100%;
     height: 8vh;
-    background-color: black;
+    background-color:#242424;
+    margin-top: auto;
+}
+
+.navContent{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.navItem{
+    padding: 1em;
+    font-size: 20px;
+    color: white;
+}
+
+#homeBtn:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#menuBtn:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#contactBtn:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
 }
