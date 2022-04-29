@@ -83,6 +83,8 @@ body{
 .innerContent{
     width:70%;
     background-color: #dedede;
+    text-align: center;
+    padding: 5%;
 }
 
 .luigiJumpImage{
@@ -95,4 +97,15 @@ body{
 
 .welcomePara{
     padding: 2% 5% 2% 5%;
+    font-size: 1.5em;
+    line-height: 120%;
+}
+
+.menuTitle{
+    font-size: 50px;
+}
+
+.menuItem{
+    font-size: 35px;
+    padding-bottom: 2%;
 }
