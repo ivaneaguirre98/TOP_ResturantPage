@@ -1,6 +1,7 @@
 import initalPageLoad from "./modules/pageLoad.js";
 import homePage from "./modules/homePage.js";
 import menuPage from "./modules/menuPage.js";
+import contactPage from "./modules/contactPage.js";
 import './style.css';
 
 const run = (() =>{
@@ -15,8 +16,6 @@ const menuBtn = document.getElementById("menuBtn");
 menuBtn.addEventListener("click", menuPage);
 
 const contactBtn = document.getElementById("contactBtn");
-contactBtn.addEventListener("click", () =>{
-    console.log("contact button");
-})
+contactBtn.addEventListener("click", contactPage);
 
 

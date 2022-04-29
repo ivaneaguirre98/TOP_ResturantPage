@@ -73,6 +73,17 @@ function buildMainSection(){
     mainSection.appendChild(innerContent);
 }
 
+function buildFooterSection(){
+    let footerDiv = document.createElement("footer");
+    footerDiv.classList.add("footerSection");
+    document.body.appendChild(footerDiv);
+
+    let footerText = document.createElement("h1");
+    footerText.innerHTML = "Made with 🤍 by Ivan Aguirre";
+    footerText.classList.add("footerText");
+    footerDiv.appendChild(footerText);
+}
+
 
 
 
@@ -80,6 +91,7 @@ function initalPageLoad(){
     buildHeader();
     buildNavBar();
     buildMainSection();
+    buildFooterSection();
 }
 
 export default initalPageLoad;
