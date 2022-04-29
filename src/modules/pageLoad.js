@@ -63,10 +63,17 @@ function buildNavBar(){
 }
 
 function buildMainSection(){
-    let mainDiv = document.createElement("div");
-    mainDiv.classList.add("mainSection");
-    contentDiv.appendChild(mainDiv);
+    let mainSectionDiv = document.createElement("div");
+    mainSectionDiv.classList.add("mainSection");
+    mainSectionDiv.id = "mainSection"
+    contentDiv.appendChild(mainSectionDiv);
+
+    let innerContent = document.createElement("div");
+    innerContent.classList.add("innerContent");
+    mainSection.appendChild(innerContent);
 }
+
+
 
 
 function initalPageLoad(){
