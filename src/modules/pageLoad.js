@@ -79,9 +79,13 @@ function buildFooterSection(){
     document.body.appendChild(footerDiv);
 
     let footerText = document.createElement("h1");
-    footerText.innerHTML = "Made with 🤍 by Ivan Aguirre";
-    footerText.classList.add("footerText");
     footerDiv.appendChild(footerText);
+
+    let gitHubLink = document.createElement("a");
+    gitHubLink.href = "https://github.com/ivaneaguirre98"
+    gitHubLink.innerHTML = "Made with 🤍 by Ivan Aguirre"
+    gitHubLink.classList.add("footerText");
+    footerText.appendChild(gitHubLink);
 }
 
 
